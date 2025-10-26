@@ -38,6 +38,4 @@ class Cadastro_Receitas():
                     "Modo de preparo": mododepreparo})
                     self.salvar_receitas()
                     return "Receita cadastrada com sucesso"   
-        
-cadre = Cadastro_Receitas()
-print(cadre.cadastrar_receita())
+ 
