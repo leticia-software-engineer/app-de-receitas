@@ -5,8 +5,88 @@
         "Modo de preparo": "Em uma panela de fundo grosso (que ajuda a distribuir o calor e evita queimar), coloque o leite condensado, a manteiga e o chocolate em pó (ou achocolatado).Antes de Ligar o Fogo: Misture bem todos os ingredientes com uma espátula ou colher de pau antes de levar ao fogo, garantindo que o chocolate em pó se dissolva completamente e não empelote.Cozimento (Fogo Baixo): Leve a panela ao fogo baixo e comece a mexer.Mexa Sem Parar: O segredo do brigadeiro é mexer continuamente, raspando o fundo e as laterais da panela, para que a mistura cozinhe por igual e não grude.Ponto (Desligar o Fogo):Para comer de colher (Brigadeiro de Colher): Quando a mistura estiver cremosa, brilhante e começar a desgrudar levemente do fundo da panela, mas ainda caindo da colher de forma lenta e pesada. Desligue o fogo neste ponto.Para enrolar (Ponto de Enrolar): Cozinhe por mais tempo, mexendo, até que a massa se solte completamente do fundo da panela, formando um bloco que se move junto ao mexer.Esfriar: Despeje o brigadeiro pronto em um prato ou recipiente untado com manteiga e deixe esfriar completamente antes de consumir ou enrolar. Se for comer de colher, sirva ainda morno, direto da panela!"
     },
     {
-        "Título": "Risoto de carne",
-        "Ingredientes": "Risoto de carne",
-        "Modo de preparo": "Risoto de carne"
+        "Título": "Feijoada",
+        "Ingredientes": "feijão preto, carne seca, costelinha de porco, linguiça calabresa, paio, bacon, alho, cebola, louro, laranja, arroz branco, couve, farofa",
+        "Modo de preparo": "Deixe as carnes de molho por 12 horas. Cozinhe o feijão com as carnes e temperos até que fiquem macias. Prepare o arroz e a couve refogada separadamente. Sirva com farofa e rodelas de laranja."
+    },
+    {
+        "Título": "Arroz Carreteiro",
+        "Ingredientes": "arroz, carne-seca desfiada, linguiça calabresa, bacon, alho, cebola, pimentão, tomate, caldo de carne, salsinha",
+        "Modo de preparo": "Frite o bacon e a linguiça, adicione a carne-seca desfiada e refogue. Acrescente o arroz e os temperos, adicione o caldo de carne e cozinhe até o arroz ficar pronto. Finalize com salsinha picada."
+    },
+    {
+        "Título": "Pão de Queijo",
+        "Ingredientes": "polvilho doce, queijo minas padrão ralado, leite, óleo, ovos, sal",
+        "Modo de preparo": "Misture todos os ingredientes até formar uma massa homogênea. Modele bolinhas e asse em forno pré-aquecido a 180°C por cerca de 20 minutos ou até dourar."
+    },
+    {
+        "Título": "Baião de Dois",
+        "Ingredientes": "arroz, feijão verde, carne de sol desfiada, queijo coalho, manteiga de garrafa, alho, cebola, pimentão, coentro",
+        "Modo de preparo": "Cozinhe o feijão e o arroz separadamente. Refogue a carne de sol com os temperos e a manteiga de garrafa. Misture o arroz, feijão e carne, adicione o queijo coalho e finalize com coentro picado."
+    },
+    {
+        "Título": "Moqueca Baiana",
+        "Ingredientes": "peixe (robalo ou badejo), leite de coco, azeite de dendê, cebola, tomate, pimentão, coentro, limão, alho",
+        "Modo de preparo": "Tempere o peixe com limão, alho e sal. Em uma panela, faça camadas com o peixe e os vegetais. Cubra com leite de coco e azeite de dendê. Cozinhe até o peixe ficar macio e finalize com coentro picado."
+    },
+    {
+        "Título": "Coxinha",
+        "Ingredientes": "frango desfiado, cebola, alho, caldo de galinha, farinha de trigo, leite, manteiga, sal, óleo para fritar",
+        "Modo de preparo": "Refogue o frango com cebola, alho e caldo de galinha. Prepare a massa cozinhando leite, manteiga e farinha até desgrudar do fundo da panela. Modele as coxinhas, recheie com o frango e frite em óleo quente."
+    },
+    {
+        "Título": "Escondidinho de Carne Seca",
+        "Ingredientes": "carne seca desfiada, mandioca cozida, leite, manteiga, queijo coalho, alho, cebola, pimentão",
+        "Modo de preparo": "Refogue a carne seca com alho, cebola e pimentão. Prepare o purê de mandioca com leite e manteiga. Em um refratário, faça camadas alternadas de purê e carne. Cubra com queijo coalho e leve ao forno para gratinar."
+    },
+    {
+        "Título": "Canjica",
+        "Ingredientes": "milho para canjica, leite, leite condensado, leite de coco, açúcar, canela, amendoim torrado",
+        "Modo de preparo": "Cozinhe o milho até ficar macio. Em uma panela, misture o milho cozido com os leites, açúcar e canela. Cozinhe até engrossar. Sirva com amendoim torrado por cima."
+    },
+    {
+        "Título": "Bolo de Rolo",
+        "Ingredientes": "ovos, açúcar, farinha de trigo, goiabada, manteiga",
+        "Modo de preparo": "Prepare a massa do bolo batendo ovos, açúcar e farinha. Asse em uma forma retangular. Após esfriar, espalhe a goiabada derretida sobre o bolo, enrole e leve à geladeira antes de servir."
+    },
+    {
+        "Título": "Virado à Paulista",
+        "Ingredientes": "feijão cozido, arroz, linguiça calabresa, bacon, couve, ovo frito, banana-da-terra",
+        "Modo de preparo": "Misture o feijão cozido com o arroz. Frite a linguiça e o bacon, adicione ao feijão com arroz. Refogue a couve e frite os ovos e as bananas. Sirva tudo junto."
+    },
+    {
+        "Título": "Tacacá",
+        "Ingredientes": "tucupi, jambu, camarão seco, goma de tapioca, alho, pimenta-de-cheiro",
+        "Modo de preparo": "Aqueça o tucupi com alho e pimenta. Cozinhe a goma de tapioca até formar um caldo espesso. Em uma tigela, coloque o tucupi, a goma e o jambu. Finalize com camarão seco."
+    },
+    {
+        "Título": "Bobó de Camarão",
+        "Ingredientes": "camarão, mandioca, leite de coco, azeite de dendê, cebola, alho, pimentão, tomate, coentro",
+        "Modo de preparo": "Cozinhe a mandioca até ficar macia e bata no liquidificador com leite de coco. Refogue os temperos, adicione o camarão e cozinhe até mudar de cor. Misture o purê de mandioca e finalize com coentro."
+    },
+    {
+        "Título": "Farofa de Mandioca",
+        "Ingredientes": "farinha de mandioca, manteiga, cebola, alho, bacon, ovos, salsinha",
+        "Modo de preparo": "Frite o bacon até dourar. Adicione a cebola e o alho, refogue. Acrescente a farinha de mandioca e os ovos mexidos. Finalize com salsinha picada."
+    },
+    {
+        "Título": "Rabada com Polenta",
+        "Ingredientes": "rabada, polenta, alho, cebola, tomate, pimentão, caldo de carne",
+        "Modo de preparo": "Cozinhe a rabada até ficar macia. Prepare a polenta conforme as instruções. Sirva a rabada sobre a polenta."
+    },
+    {
+        "Título": "Feijão Tropeiro",
+        "Ingredientes": "feijão, arroz, linguiça calabresa, bacon, alho, cebola, couve, ovo",
+        "Modo de preparo": "Cozinhe o feijão e o arroz separadamente. Frite o bacon e a linguiça, adicione o alho e a cebola. Misture o feijão, arroz e temperos. Finalize com couve refogada e ovo frito."
+    },
+    {
+        "Título": "Mocotó",
+        "Ingredientes": "pé de boi, feijão branco, alho, cebola, tomate, pimentão, coentro, arroz",
+        "Modo de preparo": "Cozinhe o pé de boi até ficar macio. Prepare o feijão branco separadamente. Refogue os temperos, adicione o mocotó e o feijão, cozinhe até engrossar. Sirva com arroz branco."
+    },
+    {
+        "Título": "Bacalhau à Gomes de Sá",
+        "Ingredientes": "bacalhau dessalgado, batata, cebola, alho, azeite, azeitona, ovos, salsinha",
+        "Modo de preparo": "Cozinhe as batatas e reserve. Refogue o bacalhau com cebola e alho. Em um refratário, faça camadas de batata, bacalhau e temperos. Regue com azeite, decore com ovos e azeitonas. Leve ao forno para dourar."
     }
 ]
