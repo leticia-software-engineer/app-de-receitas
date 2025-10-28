@@ -1,5 +1,5 @@
 from entradadousuario import Entrada_do_Usuario
-from cadastrodereceitas import Cadastro_Receitas
+from cadastrodereceitas import Cadastro_Receitas 
 
 user = Entrada_do_Usuario()
 print(user.Cadastro())
