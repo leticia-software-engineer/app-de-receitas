@@ -1,5 +1,26 @@
-{
-    "nome": "Leticia",
-    "email": "euleticia@gmail.com",
-    "senha": "123"
-}
+[
+    {
+        "nome": "leticia",
+        "email": "leticia@gmail.com",
+        "senha": "1111",
+        "identificador": "79bb7a3c-a3f7-47a6-874f-795ef816c366"
+    },
+    {
+        "nome": "diassis",
+        "email": "diassis@gmail.com",
+        "senha": "123",
+        "identificador": "8773e5e9-3ac2-49f7-9b5d-51e617bfc298"
+    },
+    {
+        "nome": "ana",
+        "email": "ana@gmail.com",
+        "senha": "12",
+        "identificador": "0999ed66-702d-4375-8198-1bf89754cad3"
+    },
+    {
+        "nome": "Luzia",
+        "email": "luzia@gmail.com",
+        "senha": "1234",
+        "identificador": "dd906540-c7d5-4c04-aefa-fd4d28e74a70"
+    }
+]

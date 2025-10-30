@@ -1,8 +1,10 @@
 import json
-import os
 import dns.resolver
 import re
+import uuid
+
 class Entrada_do_Usuario:
+
 
     def __init__(self, arquivo = "data/cadastro.json"):
         self.cadastro = arquivo
@@ -20,40 +22,33 @@ class Entrada_do_Usuario:
             return False
         
     def Cadastro(self):
-        
+
         while True:
             nome = str(input("Nome: ")).strip()
             email = input("Digite seu email: ").strip()
             senha = input("Crie uma senha: ").strip()
-            if not email:
-                print("Email inválido.")
-            elif not senha:
-                print("Senha inválida.")
-            elif not nome:
-                print("Digite um nome")
+
+            identificador = str(uuid.uuid4())
+            try:
+                with open(self.cadastro, "r", encoding="utf-8") as f:
+                    usuarios = json.load(f)
+            except (FileNotFoundError, json.JSONDecodeError):
+                usuarios = []
+        
+            if not email or not nome or not senha:
+                print("Nenhum campo deve ficar vazio.")
             elif not self.email_valido(email) or not self.verificar_dominio(email):
                 print("Email inválido. ")
+            elif any(u["email"] == email for u in usuarios):
+                print("Email já cadrastrado.")
             else:
-                with open(self.cadastro, "a+", encoding="utf-8") as cad:
-                    usuario = {"nome": nome, "email": email, "senha": senha}
-                    json.dump(usuario, cad, ensure_ascii=False, indent=4)                
+                usuario = {"nome": nome,
+                            "email": email,
+                            "senha": senha,
+                            "identificador": identificador}
+                usuarios.append(usuario)
+                with open(self.cadastro, "w", encoding="utf-8") as cad: 
+                    json.dump(usuarios, cad, ensure_ascii=False, indent=4)  
                     return "Cadastro realizado com sucesso!"
-            
-                
+                    
 
-
-
-'''def BoasVindas(nome):
-    horario = datetime.now().hour
-
-    if horario > 5 and horario < 12:
-        saudacao = f"Bom dia, {nome}!"
-    elif horario >= 12 and horario < 18:
-        saudacao = f"Boa tarde, {nome}!"
-    else:
-        saudacao = f"Boa noite, {nome}!"
-
-        return f"{saudacao}\n Seja bem-vindo ao receitas todo dia!"
-print(user.BoasVindas(nome))
-
-        '''
