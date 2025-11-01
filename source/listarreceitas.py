@@ -1,5 +1,5 @@
 import json
-class Listar_Receitas():
+class ListarReceitas():
 
   def listando_receitas(self):
     with open("data/receitas.json", "r", encoding= "utf-8") as arquivo:
@@ -12,7 +12,4 @@ class Listar_Receitas():
         print(f"{i}, {receita}")
         return receitas 
     
-lis = Listar_Receitas()
-print(lis.listando_receitas())
-          
-               
+

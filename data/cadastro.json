@@ -22,5 +22,17 @@
         "email": "luzia@gmail.com",
         "senha": "1234",
         "identificador": "dd906540-c7d5-4c04-aefa-fd4d28e74a70"
+    },
+    {
+        "nome": "Francisco",
+        "email": "eufrancisco@gmail.com",
+        "senha": "1234",
+        "identificador": "b211b6f5-cd41-430b-80cd-354b8852d3d1"
+    },
+    {
+        "nome": "Luana",
+        "email": "luana@gmail.com",
+        "senha": "1234",
+        "identificador": "599e6dee-f251-4e41-a3f6-395d94738279"
     }
 ]

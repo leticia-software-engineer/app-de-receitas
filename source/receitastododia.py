@@ -1,13 +1,14 @@
-from cadastro import Entrada_do_Usuario
-from login import Login
-from cadastrodereceitas import Cadastro_Receitas 
+#Criar menu interativo completo (1 adicionar, 2-listar, 3- buscar, 4-deletar, 0-sair).]
 
-user = Entrada_do_Usuario()
-print(user.Cadastro())
+from cadastro import Cadastro
+from opcoesusuariologado import MenuInterativo
 
-x = Login()
-print(x.login())
+user = Cadastro()
+print(user.cadastrar())
+
+menu = MenuInterativo()
+print(menu.opcoes())
 
 
-'''rec = Cadastro_Receitas()
-print(rec.cadastrar_receita())'''
+
+

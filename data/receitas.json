@@ -1,15 +1,5 @@
 [
     {
-        "Título": "Brigadeiro de panela",
-        "Ingredientes": "achocolatado em pó, leite condensado e creme de leite",
-        "Modo de preparo": "Em uma panela de fundo grosso (que ajuda a distribuir o calor e evita queimar), coloque o leite condensado, a manteiga e o chocolate em pó (ou achocolatado).Antes de Ligar o Fogo: Misture bem todos os ingredientes com uma espátula ou colher de pau antes de levar ao fogo, garantindo que o chocolate em pó se dissolva completamente e não empelote.Cozimento (Fogo Baixo): Leve a panela ao fogo baixo e comece a mexer.Mexa Sem Parar: O segredo do brigadeiro é mexer continuamente, raspando o fundo e as laterais da panela, para que a mistura cozinhe por igual e não grude.Ponto (Desligar o Fogo):Para comer de colher (Brigadeiro de Colher): Quando a mistura estiver cremosa, brilhante e começar a desgrudar levemente do fundo da panela, mas ainda caindo da colher de forma lenta e pesada. Desligue o fogo neste ponto.Para enrolar (Ponto de Enrolar): Cozinhe por mais tempo, mexendo, até que a massa se solte completamente do fundo da panela, formando um bloco que se move junto ao mexer.Esfriar: Despeje o brigadeiro pronto em um prato ou recipiente untado com manteiga e deixe esfriar completamente antes de consumir ou enrolar. Se for comer de colher, sirva ainda morno, direto da panela!"
-    },
-    {
-        "Título": "Feijoada",
-        "Ingredientes": "feijão preto, carne seca, costelinha de porco, linguiça calabresa, paio, bacon, alho, cebola, louro, laranja, arroz branco, couve, farofa",
-        "Modo de preparo": "Deixe as carnes de molho por 12 horas. Cozinhe o feijão com as carnes e temperos até que fiquem macias. Prepare o arroz e a couve refogada separadamente. Sirva com farofa e rodelas de laranja."
-    },
-    {
         "Título": "Arroz Carreteiro",
         "Ingredientes": "arroz, carne-seca desfiada, linguiça calabresa, bacon, alho, cebola, pimentão, tomate, caldo de carne, salsinha",
         "Modo de preparo": "Frite o bacon e a linguiça, adicione a carne-seca desfiada e refogue. Acrescente o arroz e os temperos, adicione o caldo de carne e cozinhe até o arroz ficar pronto. Finalize com salsinha picada."
@@ -93,5 +83,15 @@
         "Título": "Bife",
         "Ingredientes": "Carne, azeite, sal, pimenta, urucum, alho, cebola.",
         "Modo de preparo": "Corte a carne e adicione o sal, pimenta e urucum, ponha o óleo numa panela e deixe-o ferver parta o alho e a cabola e os refoque no óleo. Depois adicione a carne e deixe fritar no fogo baixo. Vire e deixe fritar por uns 15 minutos. Depois é só saborear."
+    },
+    {
+        "Título": "1",
+        "Ingredientes": "1",
+        "Modo de preparo": "1"
+    },
+    {
+        "Título": "escondidinho",
+        "Ingredientes": "carne",
+        "Modo de preparo": "teste"
     }
 ]

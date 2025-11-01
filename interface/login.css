@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: Economica, sans-serif;
+}
+
+.container {
+  width: 412px;
+  height: 917px;
+  position: relative;
+  background: #abffa2;
+  overflow: hidden;
+}
+
+.input-box {
+  width: 319px;
+  height: 59px;
+  background: white;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.email-box {
+  left: 43px;
+  top: 237px;
+}
+
+.senha-box {
+  left: 39px;
+  top: 370px;
+}
+
+.button-box {
+  width: 274px;
+  height: 54px;
+  background: #5f5b5b;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.entrar-box {
+  left: 69px;
+  top: 490px;
+}
+
+.chefe-box {
+  left: 69px;
+  top: 587px;
+}
+
+.texto {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.entrar {
+  width: 88px;
+  height: 30px;
+  left: 162px;
+  top: 502px;
+}
+
+.chefe {
+  width: 178px;
+  height: 30px;
+  left: 117px;
+  top: 599px;
+}
+
+.titulo {
+  width: 412px;
+  height: 53px;
+  left: -3px;
+  top: 56px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 32px;
+  font-family: MonteCarlo, cursive;
+  font-weight: 400;
+}
+
+.subtitulo {
+  width: 397px;
+  left: -3px;
+  top: 132px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+}
+
+.label {
+  width: 136px;
+  height: 39px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+}
+
+.email-label {
+  left: -4px;
+  top: 197px;
+}
+
+.senha-label {
+  left: -3px;
+  top: 324px;
+}
+
+.link-senha {
+  left: 92px;
+  top: 654px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+}
+
+.link-continuar {
+  width: 161px;
+  height: 23px;
+  left: 125px;
+  top: 735px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family: MonteCarlo, cursive;
+}
+
+.placeholder {
+  width: 182px;
+  height: 24px;
+  position: absolute;
+  text-align: center;
+  color: #5f5b5b;
+  font-size: 20px;
+  font-family: "Economica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.email-placeholder {
+  left: 35px;
+  top: 255px;
+}
+
+.senha-placeholder {
+  left: 39px;
+  top: 388px;
+}

@@ -1,54 +1,60 @@
 import json
-import dns.resolver
-import re
 import uuid
+from dadoscomuns import DadosComuns
+from login import Login
 
-class Entrada_do_Usuario:
+class Cadastro(DadosComuns):
+    def __init__(self, arquivo="data/cadastro.json"):
+        super().__init__(arquivo)
 
-
-    def __init__(self, arquivo = "data/cadastro.json"):
-        self.cadastro = arquivo
-
-    def email_valido(self, email):
-        padrao = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
-        return re.match(padrao, email) is not None
-    
-    def verificar_dominio(self, email):
-        dominio = email.split("@")[1]
-        try:
-            dns.resolver.resolve(dominio, "MX")
-            return True
-        except:
-            return False
-        
-    def Cadastro(self):
-
+    def cadastrar(self):
         while True:
-            nome = str(input("Nome: ")).strip()
-            email = input("Digite seu email: ").strip()
-            senha = input("Crie uma senha: ").strip()
+            escolha = input(
+                "1 - Já tenho uma conta.\n"
+                "2 - Não possuo conta.\n"
+                "3 - Continuar sem uma conta\n"
+            ).strip().lower()
+                    
+            if escolha == "2" or escolha == "não possuo conta":
+                while True:
+                    nome = input("Nome: ").strip()
+                    email = input("Digite seu email: ").strip()
+                    senha = input("Crie uma senha: ").strip()
+                    identificador = str(uuid.uuid4())
 
-            identificador = str(uuid.uuid4())
-            try:
-                with open(self.cadastro, "r", encoding="utf-8") as f:
-                    usuarios = json.load(f)
-            except (FileNotFoundError, json.JSONDecodeError):
-                usuarios = []
-        
-            if not email or not nome or not senha:
-                print("Nenhum campo deve ficar vazio.")
-            elif not self.email_valido(email) or not self.verificar_dominio(email):
-                print("Email inválido. ")
-            elif any(u["email"] == email for u in usuarios):
-                print("Email já cadrastrado.")
-            else:
-                usuario = {"nome": nome,
+                    try:
+                        with open(self.cadastro, "r", encoding="utf-8") as f:
+                            usuarios = json.load(f)
+                    except (FileNotFoundError, json.JSONDecodeError):
+                        usuarios = []
+
+                    if not email or not nome or not senha:
+                        return "Nenhum campo deve ficar vazio."
+                    elif not self.email_valido(email) or not self.verificar_dominio(email):
+                        return "Email inválido."
+                    elif any(u["email"] == email for u in usuarios):
+                        return "Email já cadastrado."
+                    else:
+                        usuario = {
+                            "nome": nome,
                             "email": email,
                             "senha": senha,
-                            "identificador": identificador}
-                usuarios.append(usuario)
-                with open(self.cadastro, "w", encoding="utf-8") as cad: 
-                    json.dump(usuarios, cad, ensure_ascii=False, indent=4)  
-                    return "Cadastro realizado com sucesso!"
+                            "identificador": identificador
+                        }
+                        usuarios.append(usuario)
+                        with open(self.cadastro, "w", encoding="utf-8") as cad:
+                            json.dump(usuarios, cad, ensure_ascii=False, indent=4)
+                        return "Cadastro realizado com sucesso!"
+                break
                     
+            elif escolha == "1" or escolha == "já tenho uma conta":
+                login = Login()
+                return login.login()
+                break
 
+            elif escolha == "3" or escolha == "continuar sem uma conta":
+                return "Você optou por continuar sem cadastro."
+                break
+            else:
+                print("Escolha uma das opções. \n")
+            

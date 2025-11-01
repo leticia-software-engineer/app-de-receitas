@@ -1,6 +1,6 @@
 import json
 
-class Filtrar_Receitas():
+class FiltrarReceitas():
 
     def filtrar_receitas(self):
 
@@ -18,6 +18,3 @@ class Filtrar_Receitas():
                 else:
                     return "Nenhuma receita encontrada."
 
-listar = Filtrar_Receitas()
-
-print(listar.filtrar_receitas())
