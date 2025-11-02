@@ -2,7 +2,8 @@ import json
 import uuid
 from dadoscomuns import DadosComuns
 from login import Login
-
+from opcoesusuariologado import MenuInterativo
+from opcoesusuariosemconta import MenuVisitante
 class Cadastro(DadosComuns):
     def __init__(self, arquivo="data/cadastro.json"):
         super().__init__(arquivo)
@@ -29,11 +30,11 @@ class Cadastro(DadosComuns):
                         usuarios = []
 
                     if not email or not nome or not senha:
-                        return "Nenhum campo deve ficar vazio."
+                        print("Nenhum campo deve ficar vazio.")
                     elif not self.email_valido(email) or not self.verificar_dominio(email):
-                        return "Email inválido."
+                        print("Email inválido.")
                     elif any(u["email"] == email for u in usuarios):
-                        return "Email já cadastrado."
+                        print("Email já cadastrado.")
                     else:
                         usuario = {
                             "nome": nome,
@@ -44,16 +45,26 @@ class Cadastro(DadosComuns):
                         usuarios.append(usuario)
                         with open(self.cadastro, "w", encoding="utf-8") as cad:
                             json.dump(usuarios, cad, ensure_ascii=False, indent=4)
-                        return "Cadastro realizado com sucesso!"
+                        print("Cadastro realizado com sucesso!")
+                        
+                        menu = MenuInterativo()
+                        return menu.opcoes()
+
+                
                 break
                     
             elif escolha == "1" or escolha == "já tenho uma conta":
                 login = Login()
-                return login.login()
+                print(login.login())
+                menu = MenuInterativo()
+                return menu.opcoes()
                 break
 
             elif escolha == "3" or escolha == "continuar sem uma conta":
-                return "Você optou por continuar sem cadastro."
+                print("Você optou por continuar sem cadastro.")
+                op = MenuVisitante()
+                return op.opcoes()
+            
                 break
             else:
                 print("Escolha uma das opções. \n")
